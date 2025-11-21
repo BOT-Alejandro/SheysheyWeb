@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Descargar APK</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Página Mejorada</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+background: #f5f5f5;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.container {
+text-align: center;
+}
+
+
+.animacion img {
+width: 180px;
+animation: flotando 2.5s ease-in-out infinite;
+}
+
+
+@keyframes flotando {
+0% { transform: translateY(0); }
+50% { transform: translateY(-12px); }
+100% { transform: translateY(0); }
+}
+
+
+h1 {
+margin-top: 20px;
+font-size: 22px;
+color: #333;
+}
+
+
+.boton-descarga {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 22px;
+background: #4CAF50;
+color: #fff;
+font-size: 18px;
+border-radius: 8px;
+text-decoration: none;
+transition: 0.2s ease;
+}
+
+
+.boton-descarga:hover {
+background: #45a049;
+transform: scale(1.05);
+}
+
+
+.texto-indicador {
+margin-top: 15px;
+font-size: 18px;
+color: #444;
+}
+
+
+</style>
 </head>
 <body>
-  <h1>Sheyshey App</h1>
-  <p>Pulsa aquí para descargar:</p>
-  <a href="Sheyshey.apk" download>Descargar APK</a>
+<div class="container">
+<div class="animacion">
+<img src="/img/sheyshey.png" alt="Sheyshey" />
+</div>
+
+
+<h1>Disfruta de nuestra aplicación descargándola aquí</h1>
+
+
+<a href="#" class="boton-descarga">Descargar aplicación</a>
+</div>
 </body>
 </html>
